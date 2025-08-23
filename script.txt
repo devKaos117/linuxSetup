@@ -1,0 +1,51 @@
+update
+
+zsh
+alacritty*
+
+vscode*
+gcc
+rust
+python3
+
+neovim
+bat
+tldr
+cpufetch
+fastfetch
+
+flatpak
+snapd
+
+bpytop
+rclone
+
+brave*
+ranger
+trash-cli
+LibreOffice
+
+texlive-all -> lastpage fancyhdr graphicx indentfirst longtable array multicol multirow enumitem mathtools amsfonts amssymb hyperref titlesec tikz tkz-euclide
+
+*virt*
+
+
+sudo dnf install qemu-kvm libvirt virt-install virt-manager virt-viewer edk2-ovmf swtpm qemu-img guestfs-tools libosinfo tuned
+
+for drv in qemu interface network nodedev nwfilter secret storage; do \\
+	sudo systemctl enable virt${drv}d.service; \\
+	sudo systemctl enable virt${drv}d{,-ro,-admin}.socket; \\
+done
+
+sudo virt-host-validate qemu
+
+
+
+
+
+/etc/sudoers
+/etc/fstab
+
+check for RPM Fusion
+Nvidia or AMD GPU and drivers
+Show errors and warnings
