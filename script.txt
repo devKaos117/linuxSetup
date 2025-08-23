@@ -1,3 +1,5 @@
+uname to differ from offsec to personal env (kali or fedora/arch)
+
 update
 
 zsh
@@ -25,7 +27,8 @@ ranger
 trash-cli
 LibreOffice
 
-texlive-all -> lastpage fancyhdr graphicx indentfirst longtable array multicol multirow enumitem mathtools amsfonts amssymb hyperref titlesec tikz tkz-euclide
+texlive-all -> (minify) font* lastpage fancyhdr graphicx indentfirst longtable array multicol multirow enumitem mathtools amsfonts amssymb hyperref titlesec tikz tkz-euclide
+
 
 *virt*
 
