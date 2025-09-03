@@ -114,7 +114,6 @@
         { key = "Paste", mods = "None", mode = "AppCursor|AppKeypad|Search|Alt|Vi", action = "Paste" },
         { key = "Copy", mods = "None", mode = "AppCursor|AppKeypad|Search|Alt|Vi", action = "Copy" },
         { key = "L", mods = "Control", mode = "AppCursor|AppKeypad|Search|Alt|Vi", action = "ClearLogNotice" },
-        { key = "C", mods = "Control|Shift", mode = "AppCursor|AppKeypad|Search|Alt|Vi", action = "Copy" },
         { key = "Insert", mods = "Shift", mode = "AppCursor|AppKeypad|Search|Alt|Vi", action = "PasteSelection" },
         { key = "0", mods = "Control", mode = "AppCursor|AppKeypad|Search|Alt|Vi", action = "ResetFontSize" },
         { key = "=", mods = "Control", mode = "AppCursor|AppKeypad|Search|Alt|Vi", action = "IncreaseFontSize" },
@@ -126,7 +125,6 @@
         { key = "PageDown", mods = "Shift", mode = "~Alt", action = "ScrollPageDown" },
         { key = "Home", mods = "Shift", mode = "~Alt", action = "ScrollToTop" },
         { key = "End", mods = "Shift", mode = "~Alt", action = "ScrollToBottom" },
-        { key = "V", mods = "Control|Shift", mode = "~Vi", action = "Paste" },
         { key = "F", mods = "Control|Shift", mode = "~Search", action = "SearchForward" },
         { key = "B", mods = "Control|Shift", mode = "~Search", action = "SearchBackward" },
         { key = "L", mods = "Control", mode = "~Vi|~Search", chars = "\u000c" },
@@ -203,8 +201,17 @@
         { key = "Enter", mods = "None", mode = "Search|~Vi", action = "SearchFocusNext" },
         # Windows only
         { key = "Enter", mods = "Alt", mode = "AppCursor|AppKeypad|Search|Alt|Vi", action = "ToggleFullscreen" },
+        # MacOS only
+        { key = "T", mods = "Control|Shift", action = "CreateNewTab" },
+        { key = "Tab", mods = "Control", action = "SelectNextTab" },
+        { key = "Tab", mods = "Control|Shift", action = "SelectPreviousTab" },
         # Custom
-        { key = "Q", mods = "Control", mode = "AppCursor|AppKeypad|Search|Alt|Vi", action = "Quit" }
+        { key = "Q", mods = "Control", mode = "~Vi", action = "Quit" },
+        { key = "ArrowUp", mods = "Shift", mode = "~Vi", action = "ScrollLineUp" },
+        { key = "ArrowDown", mods = "Shift", mode = "~Vi", action = "ScrollLineDown" },
+        { key = "C", mods = "Control|Shift", action = "Copy" },
+        { key = "V", mods = "Control|Shift", action = "Paste" },
+        { key = "N", mods = "Control|Shift", action = "CreateNewWindow" }
     ]
 
 [debug]
