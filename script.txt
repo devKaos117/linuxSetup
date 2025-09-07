@@ -26,8 +26,9 @@ brave*
 ranger
 trash-cli
 LibreOffice
+qbittorrent
 
-texlive-all -> (minify) font* lastpage fancyhdr graphicx indentfirst longtable array multicol multirow enumitem mathtools amsfonts amssymb hyperref titlesec tikz tkz-euclide
+texlive-all -> (minify) latexmk pdflatex texlive-lastpage texlive-fancyhdr texlive-multirow texlive-enumitem texlive-mathtools texlive-amsfonts texlive-hyperref texlive-titlesec texlive-tkz-euclide
 
 
 *virt*
